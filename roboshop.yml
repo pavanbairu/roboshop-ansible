@@ -1,4 +1,5 @@
 - name: Roboshop Project
   hosts: all
+  become: yes # inorder to run as user(centos)
   roles:
     - "{{ role_name }}"
