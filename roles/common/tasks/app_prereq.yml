@@ -13,7 +13,7 @@
      state: directory
 
 - name: Download the Application Content
-  ansible.builtin.unarchieve:
+  ansible.builtin.unarchive:
   src: https://roboshop-artifacts.s3.amazonaws.com/{{component}}.zip
   dest: /app
   remote_src: yes
