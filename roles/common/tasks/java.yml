@@ -9,6 +9,8 @@
 
 - name: Download Maven Dependencies
   ansible.nuiltin.shell: mvn clean package ; mv target/{{component}}-1.0.jar {{component}}.jar
+  args:
+   chdir: /app
 
 - name: Include SystemD task
   ansible.builtin.import_tasks:
