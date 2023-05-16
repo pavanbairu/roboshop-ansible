@@ -4,6 +4,9 @@ filebeat.inputs:
   enabled: true
   paths:
     - {{log_file}}
+  fields:
+    component: {{ component }}
+
 
 output.logstash:
 #   The Logstash hosts
