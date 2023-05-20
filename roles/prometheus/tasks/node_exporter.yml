@@ -1,0 +1,2 @@
+-name: Install Node Exporter
+ ansible.builtin.yum: labauto prometheus-node-exporter
